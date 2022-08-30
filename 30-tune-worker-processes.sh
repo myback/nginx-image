@@ -6,7 +6,7 @@ set -eu
 LC_ALL=C
 ME=$( basename "$0" )
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-NGINX_WORKERS_CONFIG_FILE="${NGINX_WORKERS_CONFIG_FILE:-/etc/nginx/main.d/workers.conf}"
+NGINX_WORKERS_CONFIG_FILE="${NGINX_WORKERS_CONFIG_FILE:-/etc/nginx/main.d/main.conf}"
 
 [ "${NGINX_ENTRYPOINT_WORKER_PROCESSES_AUTOTUNE:-}" ] || exit 0
 
